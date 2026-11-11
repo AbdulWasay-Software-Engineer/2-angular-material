@@ -1,0 +1,57 @@
+
+mat-toolbar {
+  background: linear-gradient(135deg, #4f46e5, #3730a3);
+  color: white;
+  height: 70px;
+  padding: 0 35px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+}
+
+/* App Name */
+mat-toolbar span:first-child {
+  font-size: 23px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Spacer */
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+/* Navigation Links */
+mat-toolbar a {
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  margin-left: 12px;
+  border-radius: 8px;
+  padding: 5px 18px;
+  transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+mat-toolbar a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  mat-toolbar {
+    padding: 0 12px;
+    height: 60px;
+  }
+
+  mat-toolbar span:first-child {
+    font-size: 18px;
+  }
+
+  mat-toolbar a {
+    font-size: 13px;
+    margin-left: 2px;
+    padding: 4px 10px;
+  }
+}

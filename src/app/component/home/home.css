@@ -1,0 +1,82 @@
+
+mat-table {
+  width: 100%;
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  margin: 20px 0;
+}
+
+/* Header Styling */
+mat-header-row {
+  background: #4f46e5;
+  min-height: 60px;
+}
+
+mat-header-cell {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border-bottom: none;
+}
+
+/* Row Styling */
+mat-row {
+  min-height: 60px;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+mat-cell {
+  color: #374151;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Hover Effect */
+mat-row:hover {
+  background: #eef2ff;
+  cursor: pointer;
+}
+
+/* Drag Icon */
+.example-drag-cursor {
+  cursor: grab;
+  color: #6366f1;
+  margin-right: 12px;
+  vertical-align: middle;
+}
+
+.example-drag-cursor:active {
+  cursor: grabbing;
+}
+
+/* Dragging Effect */
+.cdk-drag-preview {
+  background: #ffffff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.cdk-drag-placeholder {
+  opacity: 0.3;
+}
+
+.cdk-drag-animating {
+  transition: transform 250ms ease;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  mat-header-cell,
+  mat-cell {
+    font-size: 12px;
+    padding: 0 8px;
+  }
+
+  mat-table {
+    overflow-x: auto;
+  }
+}

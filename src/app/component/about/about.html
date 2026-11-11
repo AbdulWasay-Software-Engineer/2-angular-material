@@ -15,4 +15,9 @@
           (click)="addTask()">
     Add Task
   </button>
+<mat-list role="list">
+  <mat-list-item role="listitem" *ngFor="let t of tasksList">
+    {{ t }}
+  </mat-list-item>
+</mat-list>
 </div>

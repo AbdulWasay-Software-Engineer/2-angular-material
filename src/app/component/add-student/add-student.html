@@ -1,0 +1,30 @@
+<h3>Add Student</h3>
+
+<form>
+    <mat-form-field appearance="outline">
+        <mat-label>Name</mat-label>
+        <input matInput name="name" [(ngModel)]="student.name">
+    </mat-form-field>
+    <br>
+
+    <mat-form-field appearance="outline">
+        <mat-label>Age</mat-label>
+        <input matInput type="number" name="age" [(ngModel)]="student.age">
+    </mat-form-field>
+    <br>
+
+    <mat-form-field appearance="outline">
+        <mat-label>Contact</mat-label>
+        <input matInput type="number" name="contact" [(ngModel)]="student.contact">
+    </mat-form-field>
+    <br>
+
+    <mat-form-field appearance="outline">
+        <mat-label>Course</mat-label>
+        <input matInput name="course" [(ngModel)]="student.course">
+    </mat-form-field>
+    <br>
+
+    <button mat-raised-button color="primary" type="button"
+        (click)="addStudent()">Add</button>
+</form>

@@ -3,6 +3,7 @@ import { Routes } from '@angular/router';
 import { Home } from './component/home/home';
 import { About } from './component/about/about';
 import { AddStudent } from './component/add-student/add-student';
+import { StudentsTable } from './component/students-table/students-table';
 
 export const routes: Routes = [
     {
@@ -16,5 +17,9 @@ export const routes: Routes = [
         {
         path : "add-stu",
         component : AddStudent
+    },
+        {
+        path : "stu-tbl",
+        component : StudentsTable
     }
 ];

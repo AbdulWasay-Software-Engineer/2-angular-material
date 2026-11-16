@@ -5,6 +5,7 @@ import { IStudents } from '../../models/student';
 import { Studentservices } from '../../Services/studentservices';
 import { FormsModule } from '@angular/forms';
 import {MatButtonModule} from '@angular/material/button';
+import { Router } from '@angular/router';
 
 @Component({
   imports: [MatFormFieldModule, MatInputModule , FormsModule , MatButtonModule],
@@ -14,7 +15,7 @@ import {MatButtonModule} from '@angular/material/button';
 })
 
 export class AddStudent {
-  constructor(private studentservice: Studentservices) { }
+  constructor(private studentservice: Studentservices, private router : Router) { }
   student: IStudents = {
     name: "",
     age: 0,
@@ -29,6 +30,7 @@ export class AddStudent {
       contact: 12345678912,
       course: ""
     }
+    this.router.navigateByUrl('stu-tbl')
 
   }
 }
